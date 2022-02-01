@@ -1,0 +1,33 @@
+{
+  "name": "sistema-usabilidad-server",
+  "version": "1.0.0",
+  "description": "backend para el sistema de control pruebas de usabilidad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -w",
+    "dev": "nodemon dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axlserial/sistema-usabilidad-server.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axlserial/sistema-usabilidad-server/issues"
+  },
+  "homepage": "https://github.com/axlserial/sistema-usabilidad-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "promise-mysql": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "nodemon": "^2.0.15"
+  }
+}
