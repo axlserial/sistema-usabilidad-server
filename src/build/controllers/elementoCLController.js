@@ -25,7 +25,7 @@ class ElementoCLController {
     listOne(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { idElementoCL } = req.params;
-            let consulta = 'SELECT * FROM elementoCL WHERE idCliente = ' + idElementoCL;
+            let consulta = 'SELECT * FROM elementoCL WHERE idElementoCL = ' + idElementoCL;
             const respuesta = yield database_1.default.query(consulta);
             if (respuesta.length > 0) {
                 res.json(respuesta[0]);

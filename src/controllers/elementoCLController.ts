@@ -10,7 +10,7 @@ class   ElementoCLController
     }
     public async listOne(req: Request, res: Response): Promise <void>{
         const {idElementoCL} = req.params;
-        let consulta='SELECT * FROM elementoCL WHERE idCliente = '+idElementoCL;
+        let consulta='SELECT * FROM elementoCL WHERE idElementoCL = '+idElementoCL;
         const respuesta = await pool.query(consulta);
         if(respuesta.length>0){
         res.json(respuesta[0]);
